@@ -3,6 +3,8 @@ dist/
 
 # generated types
 .astro/
+.jampack/
+.husky/
 
 # dependencies
 node_modules/
