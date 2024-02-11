@@ -9,9 +9,9 @@ export async function GET() {
   return rss({
     title: SITE.title,
     description: SITE.desc,
-    site: SITE.website,
+    site: `${SITE.website}/${import.meta.env.BASE_URL}`,
     items: sortedPosts.map(({ data, slug }) => ({
-      link: `posts/${slug}/`,
+      link: `${import.meta.env.BASE_URL}/posts/${slug}/`,
       title: data.title,
       description: data.description,
       pubDate: new Date(data.modDatetime ?? data.pubDatetime),

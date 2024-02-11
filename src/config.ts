@@ -1,7 +1,8 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://mind-matrix.github.io/subliminal-chords", // replace this with your deployed domain
+  website: "https://mind-matrix.github.io/",
+  baseUrl: "/subliminal-chords",
   author: "Sagnik Modak",
   desc: "An educational and informative original content library",
   title: "Subliminal Chords",
